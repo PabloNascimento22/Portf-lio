@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: red;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px red;
+    color: white;
+    transform: scale(1.05);
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+
+}
+
+.logo-head {
+    height: 80px;
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: "Play", sans-serif;
+
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+/*////////////////////////Estilo topo do site///////////////////////////*/
+
+
+body {
+    background-color: black;
+
+}
+
+.txt-topo-site {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: "Play", sans-serif;
+
+}
+
+p {
+    font-size: 22px;
+    font-family: "Play", sans-serif;
+    text-align: justify;
+}
+
+.pablo-perfil {
+    width: 300px;
+    height: auto;
+    border-radius: 50% 20%;
+    margin-left: 170px;
+}
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.topo-do-site span {
+    color: red;
+
+}
+
+.devclub {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topo-do-site h1 span {
+    color: red;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-family: "Play", sans-serif;
+    font-weight: 600;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+/*ESTILO DAS ESPECIALIDADES*/
+section.especialidades {
+    padding: 40px;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    transition: 1.2s;
+    margin-top: 45px;
+    font-family: "Play", sans-serif;
+
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.491);
+}
+
+h2 {
+    font-family: "Play", sans-serif;
+
+}
+
+/*SOBRE MIM*/
+
+.img-sobre2 {
+    width: 500PX;
+    border-radius: 200px 200px 100px 30px;
+}
+
+section.sobre {
+    padding: 90px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: red;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 0 10px 10px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO*/
+
+section.portfolio {
+    margin-top: 100px;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.091);
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+}
+
+.flex {
+    margin-top: 100px;
+}
+
+.img-port {
+
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 9s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.buttons-port {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Play", sans-serif;
+
+
+}
+
+section .btn-contato {
+    margin-top: 100px;
+
+
+
+}
+
+.btn-contato a {
+    padding: 10px 60px;
+    font-size: 18px;
+    font-family: "Play", sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+
+}
+
+.buttons-port :hover {
+    box-shadow: 100px red;
+    color: white;
+    transform: scale(1.05);
+
+}
+
+.text-port {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Seção Formulário de contato*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+    font-family: "Play", sans-serif;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #4644442a;
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Play", sans-serif;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Play", sans-serif;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: red;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px red;
+    transform: scale(1.05);
+    color: white;
+}
+
+/**********Footer*******/
+
+.logo-footer {
+    height: 80px;
+}
+
+footer {
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.091);
+}
+
+footer .flex {
+    justify-content: space-between;
+    margin: 10px;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+.borda {
+    border-top: 2px solid red;
+}
+
+footer .line-footer p {
+    color: white;
+    font-size: 22px;
+}
+
+footer .line-footer a {
+    color: white;
+}
+
+/*Estilização do menu mobile*/
